@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Basic Scaffolding{{#if title}} - {{title}}{{/if}}</title>
+        <meta name="description" content="" />
+        <link rel='stylesheet' href='/stylesheets/style.css' type='text/css' media='all' />
+        <script type='text/javascript' src='/js/jquery.js'></script>
+    </head>
+    <body class="custom-font-enabled">
+        <div id="page" class="hfeed site">
+	        <header id="masthead" class="site-header" role="banner">
+
+            </header>
+            {{#if firstName}}
+			<div id="greeting" style="float: right;">
+				<strong>Hi, {{firstName}}!</strong>
+				<a href="/users/logout">Log out</a>
+			</div>
+		    {{/if}}
+	        <div id="main" class="wrapper">
+		        {{{body}}}
+            </div>
+	        <footer id="colophon" role="contentinfo">
+		        <div class="site-info">
+			        
+		        </div>
+	        </footer>
+        </div>        
+    </body>
+</html>
